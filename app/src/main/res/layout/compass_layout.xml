@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_degree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Degree" />
+
+    <ImageView
+        android:id="@+id/iv_compass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentTop="true"
+        android:src="@drawable/compass" />
+
+    <ImageView
+        android:id="@+id/iv_arrow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentTop="true"
+        android:src="@drawable/arrow" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <View
+            android:id="@+id/dummy"
+            android:layout_width="1dp"
+            android:layout_height="2dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+        <com.github.florent37.materialtextfield.MaterialTextField
+            android:id="@+id/mtf_latitude"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@id/dummy"
+            app:mtf_image="@drawable/ic_lat">
+
+            <EditText
+                android:id="@+id/et_lat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/latitude"
+                android:inputType="numberDecimal|numberSigned"
+                android:textColor="#333"
+                android:textColorHint="#666"
+                android:textSize="15sp" />
+
+        </com.github.florent37.materialtextfield.MaterialTextField>
+
+        <com.github.florent37.materialtextfield.MaterialTextField
+            android:id="@+id/mtf_longitude"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@id/dummy"
+            app:mtf_image="@drawable/ic_long">
+
+            <EditText
+                android:id="@+id/et_long"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/longitude"
+                android:inputType="numberDecimal|numberSigned"
+                android:textColor="#333"
+                android:textColorHint="#666"
+                android:textSize="15sp" />
+
+        </com.github.florent37.materialtextfield.MaterialTextField>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_navigate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/mtf_longitude"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_my_location_black_18dp"
+            app:rippleColor="@color/colorPrimary" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_compass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/mtf_latitude"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/ic_navigation_black_18dp"
+            app:rippleColor="@color/colorPrimary" />
+
+        <!-- <com.github.florent37.materialtextfield.MaterialTextField
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+
+             app:mtf_cardCollapsedHeight="4dp"
+             app:mtf_image="@drawable/ic_lat"
+             app:mtf_animationDuration="1000"
+             app:mtf_cardColor="@color/cardview_dark_background"
+             app:mtf_labelColor="@android:color/holo_red_dark"
+             app:mtf_openKeyboardOnFocus="true"/>-->
+    </RelativeLayout>
+
+</FrameLayout>

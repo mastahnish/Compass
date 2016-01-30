@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Compass</string>
+    <string name="latitude">Latitude</string>
+    <string name="longitude">Longitude</string>
+    <string name="settings">Settings</string>
+    <string name="title_activity_preference">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="prefVersion">Version</string>
+    <string name="sensor_settings">Sensor settings</string>
+    <string name="acc_magn_setup">Check to use accelerometer and magnetic field to setup azimuth</string>
+    <string name="orientation_setup">Check to use phone orientation to setup azimuth</string>
+    <string name="chooseMethod">Choose azimuth calculation method</string>
+    <string name="about">About</string>
+    <string name="forNetguru">Created exclusively for Netguru</string>
+    <string name="info">Info</string>
+    <string name="author">Jacek Ryś MYO Solutions</string>
+    <string name="fillData">Please provide both latitude and longitude</string>
+    <string name="lowPassFilterOn">Check to switch on low pass filter</string>
+    <string name="lowPassFilterOff">Check to switch off low pass filter</string>
+    <string name="toggleLowPassFilter">Toggle low pass filter</string>
+</resources>

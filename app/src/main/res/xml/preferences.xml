@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="prefs">
+
+    <PreferenceCategory
+        android:key="pref_sensor_settings_category"
+        android:title="@string/sensor_settings">
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="pref_low_pass_filter"
+            android:summaryOff="@string/lowPassFilterOn"
+            android:summaryOn="@string/lowPassFilterOff"
+            android:title="@string/toggleLowPassFilter" />
+
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="pref_sensor_settings"
+            android:summaryOff="@string/acc_magn_setup"
+            android:summaryOn="@string/orientation_setup"
+            android:title="@string/chooseMethod" />
+    </PreferenceCategory>
+
+
+    <PreferenceCategory
+        android:key="pref_about"
+        android:title="@string/about">
+        <Preference
+            android:key="pref_info"
+            android:summary="@string/forNetguru"
+            android:title="@string/info">
+
+        </Preference>
+        <myos.jacek.compass.VersionPreference android:title="@string/prefVersion" />
+    </PreferenceCategory>
+</PreferenceScreen>
